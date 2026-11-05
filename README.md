@@ -33,8 +33,6 @@ sudo nixos-generate-config --root /mnt
 sudo nixos-install --flake /etc/nixos#defaultsystem
 ```
 
-## Внутри системы
-
 Для упрощения использования системы предназначена утилита *nsh*. Её команды:
 
 | Команда | Описание |
