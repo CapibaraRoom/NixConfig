@@ -28,6 +28,13 @@ sudo mount /dev/nvme0n1p2 /mnt/etc/nixos
 sudo nixos-generate-config --root /mnt
 ```
 
+Перед началом установки следует обновить кэш пакетов. Это можно сделать одной из команд:
+```
+sudo nix flake update --flake /mnt/etc/nixos
+# или
+sudo nix --refresh flake metadata /mnt/etc/nixos
+```
+
 Применение конфига для системы **"defaultsystem"** (запуск установки):
 ```
 sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
