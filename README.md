@@ -30,7 +30,7 @@ sudo nixos-generate-config --root /mnt
 
 Применение конфига для системы **"defaultsystem"** (запуск установки):
 ```
-sudo nixos-install --flake /etc/nixos#defaultsystem
+sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 ```
 
 Для упрощения использования системы предназначена утилита *nsh*. Её команды:
