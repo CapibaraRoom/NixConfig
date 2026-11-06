@@ -48,7 +48,7 @@ sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 |---|---|
 | `nsh <аргументы>` | Запустить дефолтный `nix-shell` (`~/.nixdev.nix`) с zsh |
 | `nsh update` | Активировать конфигурацию до перезагрузки |
-| `full-upgrade` | Обновление всех пакетов в системе |
+| `nsh full-upgrade` | Обновление всех пакетов в системе |
 | `nsh upgrade` | Активировать конфигурацию и добавить пункт в меню GRUB |
 | `nsh check` | Проверить конфигурацию (`dry-build`) |
 | `nsh clean` | Удалить старые поколения и оптимизировать store |
