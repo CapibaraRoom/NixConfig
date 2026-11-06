@@ -48,6 +48,7 @@ sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 |---|---|
 | `nsh <аргументы>` | Запустить дефолтный `nix-shell` (`~/.nixdev.nix`) с zsh |
 | `nsh update` | Активировать конфигурацию до перезагрузки |
+| `full-upgrade` | Обновление всех пакетов в системе |
 | `nsh upgrade` | Активировать конфигурацию и добавить пункт в меню GRUB |
 | `nsh check` | Проверить конфигурацию (`dry-build`) |
 | `nsh clean` | Удалить старые поколения и оптимизировать store |
@@ -70,7 +71,6 @@ sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 
 | Команда | Назначение |
 |---|---|
-| `nix-shell` | Запускает интерактивный шелл в окружении. |
 | `nix-shell "$HOME/.nixdev.nix" --run "exec zsh"` | Запускает шелл с указанием его конфигурации. |
 | `nixos-rebuild switch --flake /etc/nixos#${HOST}` | Активирует конфиг и добавляет его в меню GRUB. |
 | `nixos-rebuild test --flake /etc/nixos#${HOST}` | Активирует конфиг до перезагрузки. |
