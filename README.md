@@ -35,7 +35,7 @@ sudo nix flake update --flake /mnt/etc/nixos
 sudo nix --refresh flake metadata /mnt/etc/nixos
 ```
 
-Применение конфига для системы **"defaultsystem"** (запуск установки):
+Применение конфигурации для системы **"defaultsystem"** (запуск установки):
 ```
 sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 ```
@@ -45,12 +45,12 @@ sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 | Команда | Описание |
 |---|---|
 | `nsh <аргументы>` | Запустить дефолтный `nix-shell` (`~/.nixdev.nix`) с zsh |
-| `nsh update` | Активировать конфиг до перезагрузки |
-| `nsh upgrade` | Активировать конфиг и добавить его в меню GRUB |
+| `nsh update` | Активировать конфигурацию до перезагрузки |
+| `nsh upgrade` | Активировать конфигурацию и добавить пункт в меню GRUB |
 | `nsh check` | Проверить конфигурацию (`dry-build`) |
 | `nsh clean` | Удалить старые поколения и оптимизировать store |
 | `nsh list` | Список пакетов текущей системы (с сортировкой) |
-| `nsh edit [путь]` | Открыть конфиги в редакторе (по умолчанию `/etc/nixos`) |
+| `nsh edit [путь]` | Открыть конфигурацию в редакторе (по умолчанию `/etc/nixos`) |
 | `nsh tree [путь]` | Интерактивный граф зависимостей (`nix-graph`) |
 
 
@@ -63,6 +63,9 @@ sudo nixos-install --flake /mnt/etc/nixos#defaultsystem
 
 
 ## Некоторые команды nix
+
+Искать пакеты можно в сервисе: [NixOS Search](https://search.nixos.org/packages)
+
 | Команда | Назначение |
 |---|---|
 | `nix-shell` | Запускает интерактивный шелл в окружении. |
