@@ -19,6 +19,6 @@ rustPlatform.buildRustPackage rec {
 
     postInstall = ''
         wrapProgram $out/bin/pinel \
-        --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath [ alsa-lib wayland libxkbcommon libGL libx11 libxcb gtk3 ]}"
+            --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath [ alsa-lib wayland libxkbcommon libGL libx11 libxcb gtk3 ]}"
     '';
 }
