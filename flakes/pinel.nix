@@ -14,7 +14,6 @@ rustPlatform.buildRustPackage rec {
     cargoLock.lockFile = "${src}/Cargo.lock";
 
     nativeBuildInputs = [ pkg-config makeWrapper ];
-
     buildInputs = [ alsa-lib wayland libxkbcommon libGL libx11 libxcb gtk3 ];
 
     postInstall = ''
