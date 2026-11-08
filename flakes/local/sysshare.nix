@@ -1,17 +1,18 @@
 { stdenvNoCC, fetchFromGitHub }:
 
 stdenvNoCC.mkDerivation {
-    name = "capibara-wallpapers";
+    name = "capibara-shared";
 
     src = fetchFromGitHub {
         owner = "CapibaraRoom";
         repo = "SystemShared";
-        rev = "1167749fdc44ad305274b924608f2920ede2907f";
-        hash = "sha256-261k/CN6e/Lzrj2uoStyyeiJJTChCn/62Kkw33OZEAE=";
+        rev = "ed38b49e97a524264c16247bfad5c0136671abe8";
+        hash = "sha256-VS4yWxbiPC86xffp1j0VQrwJvR7nPG4gIwiLgE/xX5g=";
     };
 
     installPhase = ''
         mkdir -p $out/share
         cp -r wallpapers $out/share/
+        cp -r sounds     $out/share/
     '';
 }
