@@ -1,7 +1,7 @@
 { rustPlatform, fetchFromGitHub, lib }:
 
 rustPlatform.buildRustPackage rec {
-    name = "croft-software";
+    name = "croft";
     doCheck = false;
 
     src = fetchFromGitHub {
