@@ -30,6 +30,7 @@
             nix-graph = inputs.nix-graph.packages.${system}.default;
             # caelestia-shell = inputs.caelestia-shell.packages.${system}.with-cli;
             # superfile = inputs.superfile.packages.${system}.default;
+            # ryoku - ничего не нужно; просто выставить enable в конфигурации
 
             tg-ws-proxy = pkgs.callPackage ./flakes/tg-ws-proxy-rs.nix {};
             croft = pkgs.callPackage ./flakes/croft.nix {};
