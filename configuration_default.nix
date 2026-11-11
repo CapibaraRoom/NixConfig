@@ -63,9 +63,12 @@
         # git.userName = "";
         # git.userEmail = "";
 
+
         # ssh.sftp.enable = true;
+        # ssh.sftp.writable = false;
+        # ssh.sftp.dirs = [ "/shared" ];
         # ssh.sftp.shared = [
-        #     { user = "shareuser0"; password = "share"; dirs = [ { inp = "/shared"; out = "games"; } ]; }
+        #     { user = "shareuser0"; password = "share"; dirs = [ { inp = "/shared"; out = "games"; writable = true; } ]; }
         # ];
 
         theme.activePreset = "preset1";
